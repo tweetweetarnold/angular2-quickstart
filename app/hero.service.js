@@ -16,6 +16,9 @@ var HeroService = (function () {
     HeroService.prototype.getHero = function (id) {
         return Promise.resolve(mock_heroes_1.HEROES).then(function (heroes) { return heroes.filter(function (hero) { return hero.id === id; })[0]; });
     };
+    HeroService.prototype.getHeroes = function () {
+        return Promise.resolve(mock_heroes_1.HEROES);
+    };
     // See the "Take it slow" appendix
     HeroService.prototype.getHeroesSlowly = function () {
         return new Promise(function (resolve) {

@@ -11,28 +11,28 @@ import { RouteConfig, ROUTER_DIRECTIVES, ROUTER_PROVIDERS } from '@angular/route
   template: `
   <h1>{{title}}</h1>
   <nav>
-    <a [routerLink]="['Dashboard']">Dashboard</a>
-    <a [routerLink]="['Heroes']">Heroes</a>
+  <a [routerLink]="['Dashboard']">Dashboard</a>
+  <a [routerLink]="['Heroes']">Heroes</a>
   </nav>
   <router-outlet></router-outlet>
-`,
-styleUrls: ['app/app.component.css'],
+  `,
+  styleUrls: ['app/app.component.css'],
   directives: [ROUTER_DIRECTIVES],
   providers: [
   ROUTER_PROVIDERS,
   HeroService
   ]
-  })
+})
 
 
 
 @RouteConfig([
-  {
-    path: '/heroes',
-    name: 'Heroes',
-    component: HeroesComponent
-  },
-  {
+{
+  path: '/heroes',
+  name: 'Heroes',
+  component: HeroesComponent
+},
+{
   path: '/dashboard',
   name: 'Dashboard',
   component: DashboardComponent,
@@ -42,14 +42,9 @@ styleUrls: ['app/app.component.css'],
   path: '/detail/:id',
   name: 'HeroDetail',
   component: HeroDetailComponent
-},
-{
-  path: '/detail/:id',
-  name: 'HeroDetail',
-  component: HeroDetailComponent
 }
 
-  ])
+])
 
 export class AppComponent {
   title = 'Tour of Heroes';

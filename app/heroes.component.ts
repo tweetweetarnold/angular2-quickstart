@@ -7,10 +7,9 @@ import { OnInit } from '@angular/core';
 
 
 @Component({
-	selector: 'my-heroes',
-	templateUrl: 'app/heroes.component.html',
-	stylesUrls:['app/heroes.component.css'],
-	directives: [HeroDetailComponent]
+  selector: 'my-heroes',
+  templateUrl: 'app/heroes.component.html',
+  styleUrls:  ['app/heroes.component.css']
 })
 
 export class HeroesComponent implements OnInit {

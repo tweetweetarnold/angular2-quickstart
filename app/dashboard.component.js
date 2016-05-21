@@ -29,7 +29,6 @@ var DashboardComponent = (function () {
     DashboardComponent = __decorate([
         core_1.Component({
             selector: 'my-dashboard',
-            template: "<h3>My Dashboard</h3>\n\t<div *ngFor=\"let hero of heroes\" (click)=\"gotoDetail(hero)\" class=\"col-1-4\">\n\t",
             templateUrl: 'app/dashboard.component.html',
             styleUrls: ['app/dashboard.component.css']
         }), 

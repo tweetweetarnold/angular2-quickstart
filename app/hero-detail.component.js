@@ -9,8 +9,8 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var hero_1 = require('./hero');
 var router_deprecated_1 = require('@angular/router-deprecated');
+var hero_1 = require('./hero');
 var hero_service_1 = require('./hero.service');
 var HeroDetailComponent = (function () {
     function HeroDetailComponent(heroService, routeParams) {
@@ -33,7 +33,6 @@ var HeroDetailComponent = (function () {
     HeroDetailComponent = __decorate([
         core_1.Component({
             selector: 'my-hero-detail',
-            template: "\n\t<div *ngIf=\"hero\">\n  <h2>{{hero.name}} details!</h2>\n  <div>\n    <label>id: </label>{{hero.id}}</div>\n  <div>\n    <label>name: </label>\n    <input [(ngModel)]=\"hero.name\" placeholder=\"name\" />\n  </div>\n  <button (click)=\"goBack()\">Back</button>\n</div>\n\t",
             templateUrl: 'app/hero-detail.component.html'
         }), 
         __metadata('design:paramtypes', [hero_service_1.HeroService, router_deprecated_1.RouteParams])

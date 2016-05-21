@@ -10,7 +10,6 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require('@angular/core');
 var router_deprecated_1 = require('@angular/router-deprecated');
-var hero_detail_component_1 = require('./hero-detail.component');
 var hero_service_1 = require('./hero.service');
 var HeroesComponent = (function () {
     function HeroesComponent(router, heroService) {
@@ -32,8 +31,7 @@ var HeroesComponent = (function () {
         core_1.Component({
             selector: 'my-heroes',
             templateUrl: 'app/heroes.component.html',
-            stylesUrls: ['app/heroes.component.css'],
-            directives: [hero_detail_component_1.HeroDetailComponent]
+            styleUrls: ['app/heroes.component.css']
         }), 
         __metadata('design:paramtypes', [router_deprecated_1.Router, hero_service_1.HeroService])
     ], HeroesComponent);
